@@ -310,17 +310,21 @@ main{
 }
 .section-hero{
   background: url("../images/background-index.jpg") no-repeat;
-  height: 767px;
+  height: 485px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 63px;
 }
 
-.section-hero h1{
+.section-hero-text{
+  margin-bottom: 90px;
+}
+.section-hero-text h1{
   margin: 0 0 31px 0;
 }
 
-.section-hero p{
+.section-hero-text p{
   margin: 0;
 }
 
