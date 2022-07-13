@@ -34,6 +34,7 @@
           <li>
             <a class="icon icon-heart" href="#">
               <span class="visually-hidden">Избранное.</span>
+              <span class="favorites">12</span>
             </a>
           </li>
           <li>
@@ -90,7 +91,7 @@
             </ul>
           </li>
           <li class="benefit-large">
-            <img src="images/devils_bridge.jpg" alt="Мост дьявола."  width="800" height="384"/>
+            <img src="images/devils-bridge.jpg" alt="Мост дьявола."  width="800" height="384"/>
             <div class="benefit basic">
               <h3>Там есть <br/> мост дьявола</h3>
               <span>— №2 —</span>
@@ -124,7 +125,7 @@
         <p class="article-subscribe__title heading-2">Подпишитесь на рассылку</p>
         <p class="article-subscribe__desc text-basic">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
-          <input class="subscribe-form__input" type="email" placeholder="Ваш e-mail">
+          <input class="subscribe-form__input" type="email" placeholder="Ваш e-mail" name="email" required>
           <button class="button button-second subscribe-form__button " type="submit">Подписаться</button>
         </form>
       </article>
@@ -187,8 +188,8 @@
             <div class="field-group small">
               <label class="search-form-label" for="search-number-mens">Взрослые:</label>
               <input class="search-form-field small" type="text" id="search-number-mens" name="search-number-mens" value="2">
-              <button class="search-form-field-button minus"></button>
-              <button class="search-form-field-button plus"></button>
+              <button class="search-form-field-button minus" type="button"><span class="visually-hidden">Убавить количество взрослых.</span></button>
+              <button class="search-form-field-button plus" type="button"><span class="visually-hidden">Прибавить количество взрослых.</span></button>
             </div>
             <div class="field-group small-2">
               <label class="search-form-label" for="search-number-childs">Дети:</label>
@@ -199,8 +200,8 @@
 
 
               <input class="search-form-field small" type="text" id="search-number-childs" name="search-number-childs" value="1">
-              <button class="search-form-field-button minus"></button>
-              <button class="search-form-field-button plus"></button>
+              <button class="search-form-field-button minus" type="button"><span class="visually-hidden">Убавить количество детей.</span></button>
+              <button class="search-form-field-button plus" type="button"><span class="visually-hidden">Прибавить количество детей.</span></button>
             </div>
             <button class="button search-form-button " type="submit">Найти</button>
           </form>
