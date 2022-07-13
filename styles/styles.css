@@ -54,7 +54,7 @@ body {
   line-height: 21px;
 }
 
-a{
+body a{
   text-decoration: none;
   color: #000000;
 }
@@ -72,7 +72,7 @@ a{
   overflow: hidden;
 }
 
-header{
+.header{
    height: 66px;
    background: #FFF;
 }
@@ -81,12 +81,12 @@ header{
   margin-left:70px ;
 }
 
-nav{
+.nav{
   display: flex;
   height: 65px;
 }
 
-.nav{
+.nav-list{
   display: flex;
   margin:auto auto auto 30px;
   width: 390px;
@@ -94,7 +94,7 @@ nav{
   padding: 0;
 }
 
-.nav li{
+.nav-list li{
   display: flex;
   list-style: none;
   margin: 0 17px;
@@ -102,11 +102,11 @@ nav{
   align-items: center;
 }
 
-.nav:last-child{
+.nav-list:last-child{
   margin-right: 0;
 }
 
-.nav a{
+.nav-list a{
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -116,7 +116,7 @@ nav{
   align-items: center;
 }
 
-.nav a.active{
+.nav-list a.active{
   border-bottom: 2px solid #756257;
 }
 
@@ -161,7 +161,7 @@ nav{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
+  color: #333333;
 }
 
   .benefit h3{
@@ -180,9 +180,6 @@ nav{
     margin: 0;
   }
 
-  .benefit p :not(basic){
-    color: #333333;
-  }
 
   .benefit.basic{
     background: #82B3D3;
@@ -451,7 +448,7 @@ nav{
 }
 
 
-main{
+.main{
   background: #FFF;
 }
 .section-hero{
@@ -576,7 +573,7 @@ color: inherit;
   line-height: 36px;
 }
 
-footer{
+.footer{
   height: 120px;
   width: 1050px;
   padding: 6px 70px 0 80px;
