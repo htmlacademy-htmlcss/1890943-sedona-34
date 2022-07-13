@@ -81,7 +81,9 @@ body a {
   margin-left: 70px ;
   margin-bottom: -20px;
 }
-
+.logo img{
+  display: block;
+}
 .nav {
   display: flex;
   min-height: inherit;
@@ -113,18 +115,24 @@ body a {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
-  min-height: inherit;
+  min-height: 65px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-
+  position: relative;
 }
 
-.nav-list a.active {
+.nav-list a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
   border-bottom: 2px solid #756257;
+  margin-top: 65px;
 }
 
 .header__user-menu {
   display: flex;
+  margin: 0;
   margin-right: 70px;
 }
 
@@ -499,8 +507,7 @@ body a {
 
 .section-hero::after {
   content: "";
-  position: absolute;
-  top: 494px;
+  margin-top: 25px;
   width: 1200px;
   height: 57px;
   background: url(../images/divider-welcome.svg) center no-repeat;
