@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="nav">
         <a class="logo" href="/">
           <img src="images/logo.svg" alt="Седона — небольшой городок в Аризоне." width="139" height="70"/>
         </a>
 
-        <ul class="nav">
+        <ul class="nav-list">
           <li>
             <a class="active" href="index.html">Главная</a>
           </li>
@@ -44,7 +44,7 @@
 
 
     </header>
-    <main>
+    <main class="main">
       <section class="section-hero">
         <img class="welcome" src="images/welcome.svg" alt="Welcome Sedona." width="458" height="352">
       </section>
@@ -55,9 +55,11 @@
 
 
       <section class="section-benefits">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="benefits-list">
           <li class="benefit-large">
             <div class="benefit basic">
+
               <h3>Настоящий городок</h3>
               <span>— №1 —</span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -127,7 +129,7 @@
         </form>
       </article>
     </main>
-    <footer>
+    <footer class="footer">
       <ul class="socials">
         <li>
           <a href="https://vk.com/htmlacademy">
@@ -183,20 +185,20 @@
               <span class="search-form-prompt">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="field-group small">
-              <label class="search-form-label" for="search-date-departure">Взрослые:</label>
-              <input class="search-form-field small" type="text" id="search-date-departure" name="search-date-departure" value="2">
+              <label class="search-form-label" for="search-number-mens">Взрослые:</label>
+              <input class="search-form-field small" type="text" id="search-number-mens" name="search-number-mens" value="2">
               <button class="search-form-field-button minus"></button>
               <button class="search-form-field-button plus"></button>
             </div>
             <div class="field-group small-2">
-              <label class="search-form-label" for="search-date-departure">Дети:</label>
+              <label class="search-form-label" for="search-number-childs">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle"  type="button" aria-labelledby="tooltip-label">i</button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
 
 
-              <input class="search-form-field small" type="text" id="search-date-departure" name="search-date-departure" value="1">
+              <input class="search-form-field small" type="text" id="search-number-childs" name="search-number-childs" value="1">
               <button class="search-form-field-button minus"></button>
               <button class="search-form-field-button plus"></button>
             </div>
