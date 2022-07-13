@@ -34,6 +34,7 @@
           <li>
             <a class="icon icon-heart" href="#">
               <span class="visually-hidden">Избранное.</span>
+              <span class="favorites">12</span>
             </a>
           </li>
           <li>
@@ -123,19 +124,19 @@
 
               <div class="catalog-filter__right__input-numbers">
                 <span>от</span>
-                <input class="" type="text" value="0">
-                <input class="" type="text" value="9000">
+                <input class="" type="text" value="0" name="input-min-value">
+                <input class="" type="text" value="9000" name="input-max-value">
 
                 <span>до</span>
               </div>
 
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 196px">
-                    <button class="range-toggle toggle-min">
+                  <div class="range-bar" style="left: 0; width: 196px;">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -159,19 +160,19 @@
             <option value="popular">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-          <ul>
-            <li class="active">
-              <a class="view view-table" href="#">
+          <ul class="sorting-buttons">
+            <li class="sorting-buttons-item ">
+              <a class=" view-table view active" href="#">
                 <span class="visually-hidden">Показать таблицу.</span>
               </a>
             </li>
-            <li>
-              <a class="view view-slideshow" href="#">
+            <li class="sorting-buttons-item">
+              <a class=" view-slideshow view" href="#">
                 <span class="visually-hidden">Показать слайды.</span>
               </a>
             </li>
-            <li>
-              <a class="view view-list" href="#">
+            <li class="sorting-buttons-item">
+              <a class="view-list view" href="#">
                 <span class="visually-hidden">Показать список.</span>
               </a>
             </li>
@@ -183,7 +184,7 @@
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotels/amara_resort_and_spa.jpg" alt="Amara Resort & Spa." width="300" height="211"/>
+              <img class="hotel-card-img" src="images/hotels/amara-resort-and-spa.jpg" alt="Amara Resort & Spa." width="300" height="211"/>
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -210,7 +211,7 @@
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotels/villas_at_poco_diablo.jpg" alt="Villas at Poco Diablo." width="300" height="211"/>
+              <img class="hotel-card-img" src="images/hotels/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo." width="300" height="211"/>
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -237,7 +238,7 @@
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotels/desert_quail_inn.jpg" alt="Desert Quail Inn." width="300" height="211"/>
+              <img class="hotel-card-img" src="images/hotels/desert-quail-inn.jpg" alt="Desert Quail Inn." width="300" height="211"/>
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -264,7 +265,7 @@
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotels/greentree_inn.jpg" alt="GreenTree Inn." width="300" height="211"/>
+              <img class="hotel-card-img" src="images/hotels/greentree-inn.jpg" alt="GreenTree Inn." width="300" height="211"/>
             </a>
             <a class="hotel-card-link" href="#">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -325,7 +326,7 @@
         <p class="article-subscribe__title heading-2">Подпишитесь на рассылку</p>
         <p class="article-subscribe__desc text-basic">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
-          <input class="subscribe-form__input" type="email" placeholder="Ваш e-mail">
+          <input class="subscribe-form__input" type="email" placeholder="Ваш e-mail" name="email" required>
           <button class="subscribe-form__button button button-second" type="submit">Подписаться</button>
         </form>
       </article>
